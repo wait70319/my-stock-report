@@ -9,15 +9,11 @@
             body { font-family: 'Segoe UI', sans-serif; background: #1a1a1a; color: #e0e0e0; padding: 20px; }
             .container { max-width: 1200px; margin: 0 auto; }
             h1, h2 { color: #ffffff; border-bottom: 2px solid #333; padding-bottom: 10px; }
-            
-            /* 數據表格 */
             table { width: 100%; border-collapse: collapse; margin-bottom: 30px; background: #252525; }
             th, td { padding: 12px; text-align: left; border-bottom: 1px solid #333; }
             th { background: #333; color: #aaa; }
             .red { color: #ff6b6b; font-weight: bold; }
             .green { color: #4ecdc4; font-weight: bold; }
-            
-            /* 新聞區塊 */
             .news-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 20px; }
             .news-card { background: #252525; padding: 15px; border-radius: 8px; border: 1px solid #333; }
             .news-card h3 { margin-top: 0; color: #4dabf7; }
@@ -28,89 +24,62 @@
     <body>
         <div class="container">
             <h1>📊 深度市場量化日報 (Pro)</h1>
-            <p>更新時間: 2026-01-25 22:44</p>
+            <p>更新時間: 2026-01-26 22:50</p>
             
-            <h2>⚡ 市場核心數據與技術指標</h2>
+            <h2>⚡ 市場核心數據</h2>
             <table>
                 <tr>
                     <th>資產</th>
                     <th>價格</th>
                     <th>漲跌幅</th>
                     <th>RSI 強度</th>
-                    <th>月線趨勢</th>
+                    <th>趨勢</th>
                     <th>乖離率</th>
                 </tr>
                 
                 <tr>
-                    <td>🇺🇸 標普 500</td>
-                    <td>6,915.61</td>
-                    <td class="red">+0.03%</td>
-                    <td>55.7 (中性 😐)</td>
-                    <td>多頭排列 🐂</td>
-                    <td>+0.0% (乖離率)</td>
-                </tr>
-                
-                <tr>
                     <td>🇹🇼 台灣加權</td>
-                    <td>31,961.51</td>
-                    <td class="red">+0.68%</td>
-                    <td>74.9 (過熱 🔥)</td>
+                    <td>32,064.52</td>
+                    <td class="red">+0.32%</td>
+                    <td>72.2 (過熱 🔥)</td>
                     <td>多頭排列 🐂</td>
-                    <td>+5.0% (乖離率)</td>
+                    <td>+4.7%</td>
                 </tr>
                 
                 <tr>
-                    <td>🇯🇵 日經 225</td>
-                    <td>53,846.87</td>
-                    <td class="red">+0.29%</td>
-                    <td>68.6 (中性 😐)</td>
+                    <td>💴 日圓換美元 (JPY/USD)</td>
+                    <td>0.0065</td>
+                    <td class="red">+2.82%</td>
+                    <td>62.4 (中性 😐)</td>
                     <td>多頭排列 🐂</td>
-                    <td>+3.1% (乖離率)</td>
+                    <td>+2.1%</td>
                 </tr>
                 
                 <tr>
-                    <td>😨 恐慌指數 (VIX)</td>
-                    <td>16.09</td>
-                    <td class="green">+2.88%</td>
-                    <td>55.4 (中性 😐)</td>
-                    <td>多頭排列 🐂</td>
-                    <td>+4.4% (乖離率)</td>
+                    <td>💵 美元指數 (DXY)</td>
+                    <td>97.05</td>
+                    <td class="green">-0.56%</td>
+                    <td>35.6 (中性 😐)</td>
+                    <td>跌破月線 🐻</td>
+                    <td>-1.5%</td>
                 </tr>
                 
                 <tr>
                     <td>📉 美債10年殖利率</td>
-                    <td>4.24</td>
-                    <td class="red">-0.24%</td>
-                    <td>56.4 (中性 😐)</td>
+                    <td>4.21</td>
+                    <td class="red">-0.61%</td>
+                    <td>55.8 (中性 😐)</td>
                     <td>多頭排列 🐂</td>
-                    <td>+1.4% (乖離率)</td>
+                    <td>+0.7%</td>
                 </tr>
                 
                 <tr>
-                    <td>🔥 台積電 (TSM)</td>
-                    <td>334.87</td>
-                    <td class="red">+2.29%</td>
-                    <td>60.0 (中性 😐)</td>
+                    <td>😨 恐慌指數 (VIX)</td>
+                    <td>16.15</td>
+                    <td class="green">+0.37%</td>
+                    <td>54.4 (中性 😐)</td>
                     <td>多頭排列 🐂</td>
-                    <td>+4.2% (乖離率)</td>
-                </tr>
-                
-                <tr>
-                    <td>⚡ 核能龍頭 (CEG)</td>
-                    <td>289.06</td>
-                    <td class="red">+0.60%</td>
-                    <td>22.9 (超賣 🧊)</td>
-                    <td>跌破月線 🐻</td>
-                    <td>-13.6% (乖離率)</td>
-                </tr>
-                
-                <tr>
-                    <td>💊 禮來製藥 (LLY)</td>
-                    <td>1,064.29</td>
-                    <td class="green">-2.12%</td>
-                    <td>47.3 (中性 😐)</td>
-                    <td>跌破月線 🐻</td>
-                    <td>-0.6% (乖離率)</td>
+                    <td>+3.9%</td>
                 </tr>
                 
             </table>
@@ -120,17 +89,17 @@
                 
                 <div class="news-card">
                     <h3>📈 宏觀市場</h3>
-                    <div class="news-item"><a href="https://news.google.com/rss/articles/CBMivwNBVV95cUxORldqRHA4cldUUlVjeUstVnczaXFuYmktVzNUak1jSG42dF9Ncm5GNEF6QVJEeWFmSUJsMmF4SDRFclVyRjhGYkhOSjNEaXRkQnpxSkJKdXkycVg5ZWE3b2FJdklFbExyVjlNWV84ZTFacnNwNjhEdlNiS1c0Z2V1MUdybDZETjBqNWhNcVp6aFgxejVXOWdQV1RPQVNMTWlZMUY3REZ4M0hCVFpNOS1TZ2dHVXI4dzBtSUZQTVNBU2hEc1JzdF84YzMyRDk4UklpME82U0g1TF9KR2tvMEl1M2lfYXpOY2RydlBDZmJMYWMyQmFNaEM5NVlmY1BrNS1OVVVVQW5FRFdneEY1U19jZXVQYjljNjB1TUpyMUFFdER0Zy1jVFNWaV9sLUFFVjlEU0Jja3hsZmJsRnVVcFg3UE9BTXB1Q2hZVXgyNVhPNjg5RXRic2VwWE4xem9CckVKZ0lHTGRvMlFhdDFUZzVueUx1Z3RrRmYtMXprTnE4WDhZNTFCTUNWdVI3RFRCRGVOV1ZCN3pXaUIybzdidHd5d2VfYU91OThyUDdYb2EycmoyNkZCODRsSDlTdnpENDg?oc=5" target="_blank">The Fed is expected to stand pat this week. The big question is for how long? - MarketWatch</a></div><div class="news-item"><a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxQMkgzNVlrTllaT2Y4V2ladDJXTS1aWlpJOF96am9IY1RTcWNHWDZjSEhEVWVlTHhYWE1jdDI5elRaM0hMRFRnZUtrZnF0ZWVnakE2MEcxNm1BQVZTSFVPWXBIUWtyTklsZUppeUV5M01LbWJJbmRZRDVSS1FuS3doUjI1UlllUkFMQ3RTZ3hRM05wbHRXNFlLTkhVbVpyZDA?oc=5" target="_blank">Currency markets on guard for intervention in Japan's yen - Reuters</a></div><div class="news-item"><a href="https://news.google.com/rss/articles/CBMilAFBVV95cUxNeExPUXNQeTVwX1VFalgyMDB3WFNqZFdtdVBtYWxmQ1d1ZnZSTTRqZVdqby1tSkRmT3pRY2d0MXBtWUFUNVRlSVhWdk8wY2hiQ05MMTFhRkZaNlpMeGVYdkItMHVkYWp0RXR3Mm1FSVRnVGh2N3ltb1I0NnpfeWpDcGtrOERSNm9xUGdoNVNFWDBfOHFo0gGaAUFVX3lxTE5NaThLTFRhaEVXeWNRV292cHhEQWpSTjVtMDZDWS15Rm1wQkRzTW9QVDZQTWh2alplemNOWjE5cTlfLWlDN01EVmRoSFo5X0djUVZ6UVdhWUQ4aGdtX1c0LUdxc1BUbzUzblpvSWNvMUUyaUJ3NjRYOFpLQk1jZjdibFp6cmlkWFpUclgtZ2NjMW1uVG9qZGFielE?oc=5" target="_blank">Everyday Economics: Fiscal reality meets Central Bank caution in week ahead - The Center Square</a></div><div class="news-item"><a href="https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5tMW1SOXlLMkplcWFWVEhsaWpob3k2YjlHelJIMG9zQTFVWjJ5M1ZNNmRoeXcyNENzeklhNGNoVExOZC10NXhjVGxjQmxjRDd0NTE4V01LYWlma0ZDZGoxWC1NX09qcE0?oc=5" target="_blank">If you hate inflation, then you'll love stocks 🎈 - TKer by Sam Ro</a></div>
+                    <div class="news-item"><a href="https://news.google.com/rss/articles/CBMiuAFBVV95cUxOZTh5UzdndjZzcmczNGJzcDQwTnNkLVN3Vk9OYU9mbHlKc0RTci00dWMzeUR4M3p1N3RnN1ZlaVItNm5OYndHeG5mRkhQRmlKNlc0WG5nUHhFZHdYdHd3Y09scW5GczZ3TE45V0NfeEVVNEVRZHkwdk4yQkk0bkJFZGVyMHVzRUlLa3VXMzNHNjZheFJkTFZvWU9iamo2WXFRVzNZaFFXSmFmMXlLUWdRbmE3bzYybk1u?oc=5" target="_blank">Fed meeting likely to be overshadowed by threats to central bank's independence - Reuters</a></div><div class="news-item"><a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE9DOUFvN1VaT0JEem42a1lHRmhodUphQkV2NnFKQ09hczJiZUFsWTdiZ0hRcHNMRE91bzVtRkJqNDNSanhwa3dVZHkwT1dDTVlKekVqbTZMU09HZklNWERkUmhrTWtSMmVsNVV3RmIwMNIBdEFVX3lxTFBIVGFLU3VuakxuWmxVNUtLZTNsZHNTazNiQi1WTWZxS19wNW0tTlRsRjctQjRVc21tNVFlZ1lVZkwyY3BKMUp2b21KSmZWb3REb3RlS0ZHcGdMT1Z5T1VEMnd2VVZVRnJkeFdEem01ZTdQM0JV?oc=5" target="_blank">Fed is likely to hold interest rates steady, resisting Trump pressure. Here’s what that means for borrowers - CNBC</a></div><div class="news-item"><a href="https://news.google.com/rss/articles/CBMikgFBVV95cUxOVkI0WEQ1b3RlcUZTYVN6YUxmTGFhSldCNjJYeDhCVTdnUUl4Q09BdHBnc2xLa01EeFJTMDltOWIxa211aW9nV0o1YjBVaTY5Uk9fWVlaY3VhUzRSSU4xdTJnbzcxbnBwMlR1OWhENjFrajVlSjJBcU83NmtUdDJRMzBOQm0yT0YyX2UtM0xXOXRzZw?oc=5" target="_blank">January Fed Meeting: Live Updates and Commentary - Kiplinger</a></div><div class="news-item"><a href="https://news.google.com/rss/articles/CBMijwFBVV95cUxNZm1LaVNfWVVfV2labnlCcDBZNnNhOWZTZ2dqYWR3RE8wVGYyb0VWNFQ4RkdzSzYtYzlOVDh0cGVCbDdscFNUOWJ2bzhHRkJDdThSMGlTc2Y0bXRtYkxsZ2xoWGxrM0lMOU5paUo2aWU5YVdHeFZNTW13OUdlUWRqLUVWYWYyTVJ1UlhGSXltRQ?oc=5" target="_blank">Tariffs, AI and Fed policy frame Economic Outlook event - news.uchicago.edu</a></div>
                 </div>
                 
                 <div class="news-card">
                     <h3>🤖 AI 與半導體</h3>
-                    <div class="news-item"><a href="https://news.google.com/rss/articles/CBMiyAFBVV95cUxOMi12Rmc0RHd3SVRHSWFFNnhra2tRVTVCdjFVdlhwZVU0cmVEeDB2M1lxQi1kMlQxVkkxamJDU1FxOVk5bnB1eTVRU0JWanQ1U05IUm4xS0ZCODB5bkJ6UHhoVEp0NHlPNklGN01PdVM2U1N3TWRfSkVpWXJKcF9XQ2FOcDJYVVpPMnZJWW5JbWxpREhZQkJVYXQtcG1TNUllbnZFMU4wZUJUTFNadWVRcmZpdGF2dEdHZlFLTXNfOWdUM1d2QXVuMA?oc=5" target="_blank">Nvidia CEO Jensen Huang: 'Trillions of dollars of AI infrastructure needs to be built' - Yahoo Finance</a></div><div class="news-item"><a href="https://news.google.com/rss/articles/CBMimAFBVV95cUxOaUxWcVVvUGpZc0RzUHR5b0ZqanRpVjJZNC1uczZ2d0F3WVgxMnc4TldBUVFtTWpDaExfbXFMUlZtQVZfa3FMeXpTcXFVRFJXcnp5S3FaVGxDTkZvWGNVa3YzSlBhRnJURDF3QVdTOGRkNVNLRndZWmNtS0R4Z0Q3ZkxuaTcwRmI1TGhoMVZaQ0Z5eEhickV2Ng?oc=5" target="_blank">Nvidia's 85% GPU Market Share Faces Growing Competition: Is This AI Stock Still a Buy for 2026? - The Motley Fool</a></div><div class="news-item"><a href="https://news.google.com/rss/articles/CBMigAFBVV95cUxObXY1R1dyMHdteVFiWVFnTEhhRm1HSzVSTmtLOHVBRHVCMWlBQ0FEalV4aHd1amoxZElsbVhmYzFSNXBpN3hBT2RnU3RqRU5VM1pXeEtUX2J5VzN4elhoVjBtMUp4NWI2RjFHMWxpaUMxSGNyYzJMMEhUdmlkbUxuVw?oc=5" target="_blank">Should Tesla Robotaxi Bulls Fear NVIDIA and Waymo? - AOL.com</a></div><div class="news-item"><a href="https://news.google.com/rss/articles/CBMinwFBVV95cUxOTU84TWJuZmdaOEU1Y3J2cTltT2VmbkhuRWx2T3R5clhzOGJvSF9VREFsYW1MUGprRGhEUVVSakRITWZZSXViOUFmNGVoREd1VVc4d3NVelB3U2NKWG9BaDc1cXYzeTJpS3pmcnFBTlJkcDI4Z2J6VDg4aVU1ZTE3T2dOZjFSZVljVjd1ZmJNb3RPQ3RtWWN1WTN4NTdOX1E?oc=5" target="_blank">Nvidia CEO Jensen Huang gives AI warning Wall Street can’t ignore - thestreet.com</a></div>
+                    <div class="news-item"><a href="https://news.google.com/rss/articles/CBMiuwFBVV95cUxOcS10amVTOWhBR3htRVdyVVZpbV9kU0c2b1VRVFg1SW4yUXB6LUpJWTB4TkhkSUJuRzhYY1o5V0Z6c2l3Y0cwcUdueXVlc2ZySEJaUWQ2WWY5a0xNMDJOYTZNb29qcDlHOTRRbHh6aEo2TlU0Z1BwdGRjQ1ZmR0ROeDR0dnB3MGdtZWZjYVhyd2d4WGQtLTJEd3dYLWFJVlJFYzczS294Z1M1ZlU2c2t0bWh3UkNyU3Q0TTBJ?oc=5" target="_blank">NVIDIA and CoreWeave Strengthen Collaboration to Accelerate Buildout of AI Factories - NVIDIA Newsroom</a></div><div class="news-item"><a href="https://news.google.com/rss/articles/CBMikgNBVV95cUxNVUVRZHFxZDVFSWJpcGtrSE9JZVVyR3ZWa1AxOWhScVp5UlpfNHNyUTRCYnM1TG0tY2gzWEUySEE0Q25oaGRoLTNMbFNNRU1Ra3JtZnRCU1ViZ1c3Wlp6aE1RZHhHSG5xdFZHMGp3WERqWnlUdzhocEJGUExQV1FwV25XZ1Q1a0RBTVVKRjhpb1FzZllZZGdEakUzb2ZpNEl2QnhuOFU1U3dqMWRLeEZLRlRQckNtTnF5dHdVVWg5X21fNVVteU5aTk5CZHM0Mm5XYzVrMmRmU2xPUDMyYVJGOUFESkxZcGV1NmxNRlFiVXdLcFdvamZBaWQ3VUJmS2x5N0wweWdaaV8yYzFHUE02ZWN2OFZMX2RvZGFfS2V2bk1YZUdjTU1tS0tLR3BPbGxMZWFHbFItVTVhYUNrbHo3d0s0eXJSS2JFamQtc3dsMktsR1RNd3gxQzhnSTNqLTdtQ0htVllDRTlEQ196WDJxcWRTaUZVd21BSExjZEVZeVBlbldwUjVZcVJzSmRZLTU3cVE?oc=5" target="_blank">How Nvidia Just Made CoreWeave Stock a Winner Again - Barron's</a></div><div class="news-item"><a href="https://news.google.com/rss/articles/CBMiqgNBVV95cUxOY2VLcHRTWEk3RWVTZHNMTzk1OUJZejg3ajRhWWRjM2hyM1I2bzVURThfTlRmXzNBYVlUU01HZjRYS1ZJTzA5T0lkY0JnMGhuYWRDdThNY1NScTJQNDQ3NE51X1pzN1hZNFJJYnRqYWZ2bUg3enBkMDNwRmplQmRma0VueDV0LUpCTjNsalQtd1Y5RjM1X2c2TkVvbVJvYjJNTHA4UWxiMFBQNkNRSE1pQkdVRDlfQzA0WUR4MXhyLXZSbVRsalY2SzNTSHFDRV9LZGM5TVhVN2hWMWJuS1BDLWZVbVRqaXNMWFVhXzRYMnF1cjNZWmpldmg0c1ZCM2tSdERnMlo3X2QtNmFHVnFqbm92T2RlZi01X1l1Ry1Fc3FNWkJOS3dyMjEwNUVDdVJuMEYxYnhCQkRzWi0wUmxjZW1IUURHY1QyaHlyamFKT0xqcXp2YmpCNkxGNDRCdThWNjJYcEpOZlA3TUR1c2pRb2k0RnlCR3B3UjE1bUljQkIyckdZdTV6Q0hxOTRDSmkwZFZrVk9icTB0RTVqcDNCRUhTVlY4YzlqWGc?oc=5" target="_blank">Nvidia Invests $2 Billion in CoreWeave in AI-Factory Collaboration - The Wall Street Journal</a></div><div class="news-item"><a href="https://news.google.com/rss/articles/CBMihgFBVV95cUxNRmlIUlN5VWEzdVNnSFRFMTFmUlBvajVtZHByUHFQcU9hcGNLRnhBV2ZuY2lPSnR4ekUwRmJFbGFPazVzSkszTzBBTFZ2cGU5dXVHTnV3X09QZ1VlZG1adnRTZllaZkhTYmpfMGFiTXc4V3EtM0Q2eDRmU2hlT2NNRENWTTdvUQ?oc=5" target="_blank">Nvidia’s rally shows DeepSeek fears were unfounded a year later - Yahoo Finance</a></div>
                 </div>
                 
                 <div class="news-card">
                     <h3>🇹🇼 台股焦點</h3>
-                    <div class="news-item"><a href="https://news.google.com/rss/articles/CBMimANBVV95cUxNYXZMbVgyZWlTeXA1Z0J6QUU1dkNYT05nTEg5elZaZWs1bDNheVZ4R1VZcTk5UmtSZUNNVlRuYnJjdFprN1FrZE1zYV9FYzBzNVdhV1MzUXh2LW1ZbmlxeG5XRWVLdk8tY0d4VS1LTlh1eVR5ZjM1bi1VajVtX2pvNWRYcXgwcFNkZ2tuUThGNzl3UHBMcUVPOWZxWDQ2aEZNUTVSTXN4WGhvWTE2Q1dkbm1mWmdOQnRvUjEtQ1UwYmZiMTBmWXJXeFptR1dPU1dlemw4d0hWX256ZWtzRXFDYjc0cjBBdGRGRkx1ODJrQmQxWnFyNUJyc1NsWWNqVmk3V3lxUkxoRnpIbVhndXlwNkRBQXBVUi1oTmh1dXVTLTFrVDJlTEFtb09nRnQ4SjFoeDdILTA2ZThKZFZDQUMxYkJNTlFDYlRlQ0l6TjNLOHRDXzU1RjAzbnh4WXdTNE12aVFFV1JIT3laTjg1bzRxbDFCcWFPaTRkWUxWQTJLajU5WnZob0tDaFpiZ2phek44UEJObE92VVk?oc=5" target="_blank">台股新二哥! 台達電觸漲停市值超車鴻海美系外資上調目標價 - MSN</a></div><div class="news-item"><a href="https://news.google.com/rss/articles/CBMiT0FVX3lxTE1VbXdjd3MxbmRtQkJRYkZhUHdfdGtnTDVkWEFYUmk1VEdGUVR2UEFNcjhITEltamJ6UzJscE5NS0xucDBhMXhMcl9XMUVfd00?oc=5" target="_blank">〈台股盤前要聞〉今年來暴漲近3000點「雞犬升天」輪漲、童子賢看好AI產業跑馬圈地 - news.cnyes.com</a></div><div class="news-item"><a href="https://news.google.com/rss/articles/CBMiWEFVX3lxTE5YbHRTOWNVekQ1aG9aLXNBWHpOb1Y0RHZtNzVtV0RsOHdPNGlvRWFOeGxqTkt0aW9PeXpYWHpZdDRsUFk4ejR0eFFSSG9hSjh1S3RGeWJUbEU?oc=5" target="_blank">〈財經週報-看盤焦點〉科技創新加持 台股多頭續攻 主動選股靈活布局 - stock.ltn.com.tw</a></div><div class="news-item"><a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE1kSE9MMTd0cWxfV2pteFR5QTltb09xYU4zU0NGeTdVbkZUUG9iNVJCeDhxeUR3ZEUzZDJPcTlmeGJLRF94cTdkRXlsODNFUVY2bDMyU09HUFVIb0hpaW40ME12VTRjN2xqQ3lQVTl0SQ?oc=5" target="_blank">【台股115/01/26日(一)盤前分析】 - 理財周刊</a></div>
+                    <div class="news-item"><a href="https://news.google.com/rss/articles/CBMiS0FVX3lxTE1SMFNCV1lveWRVYjZqRVR5TFJXM1RiN0pqTTFNemlBbDJpUW9xTXpWNTZhNmVpOUgxWXBCVzRCTEJPWW9ydWVHaENaQQ?oc=5" target="_blank">〈台股盤前要聞〉台股成功站上3萬2新高、銀樓金價衝破2萬元、黃仁勳29日抵台 - cnyes.com</a></div><div class="news-item"><a href="https://news.google.com/rss/articles/CBMipgNBVV95cUxOX0RJbHhEczBZMmgwSElmX28xX3FqRXgwM2dNaXpkS0E2cW5fbHNqVnJPMW1PVzVudlhuUHoyVk1BeUhPMi1xaHUxWW41dUZpWkVnTEs1R0dldl9TXzd5WmZSRmVFdjNuLVZrUWE2aUZWM0NHTjFRb1Vac1FpQjB1VlpEUjdoMkk4bnFiMXRfRHdFNl9wNmswLU9YMUVpRi0tQ28yaUR5ZGlKWlZNdlItbmpBSnp2WlYtNld0TG9jaVRremVxNG80MUt1YlFTX3FKRVlaWXJMSVdzbDBlYVp0Y2J5aHF2MEJBb0RXcHpDak1zM3FjUHdKZXRLeGMtNzZ1dDlwcGIwWTdNdGVTLXJwWDhRVFpTMlFVMnRkWTJ6Rnl6REpvM2tOOFUwNC1MeU1fQVRoV3U1dmxnVFdmVFlWTEZXelREdlpTaGhkMmJJMC1wSk5LdHE5cXRZTUhxTm5oSlQ1d1NVdFRSM0JMaGU2NXg4a3ZPYUpreG1ITVJxX0xEVXJlZkhQNnY2Sjc0X2RUNkNUZnd5ZFRzalNyMkZZd2tjeHpyQQ?oc=5" target="_blank">目標價大升也沒用！台股走強「這族群」3雄卻全數翻黑 外資才剛點讚：整年供給吃緊 - Yahoo</a></div><div class="news-item"><a href="https://news.google.com/rss/articles/CBMiwARBVV95cUxPMEtadXNCci12dEVJMC02WjRYQ0g4OTljNVg4QWFwMHN0WVdGeHlfeDJPVXpaandhUmJYeU5oM2tMWmo5d2J1ZGZ5NW1xa1M1d2p5bDJ6b3MwcFBIQ1JTNjY4Ri1tQ1VqWUJ0RG12bU56Tmc5Yy1oRTJCSG91cERaalBSZGwxLVBtb2p0Rk95eEJJTkY0LVFvYW8waVVaamlkcWUtQ0NPWlRVTldFRXRUT3JaLU1OdWZXMGxUbV9GT1JvSmljLVh0VEhyYjFUeVFUNjFTOVhqQWo4NTIyQk9RZW5kSHZCYTc2anduaHZ2eXYySWVYYWx0aUhHYm01Sm5QYm04V2VNWXJJdFBWWk9VU0RCZUNYWVB1SVVSaW9QNDJSV250VHVuQjc5TW00cXZNMlpDN2ZteFhKX3M2a3JjdkVtNVUxYlBPckNBSl9ScnVzcTloZGFSNl80bGd0Q0MwWnQ5VlFIQVJMYU10LURWSUJqejhHZDdob0NSYzNtVklTYll1d0xiUzI1eEE1UlQ2MzlvN0x1emk2SjVQb3lHc3VHRGc2YVgybVUydExDcjhzajQtYWRna0lOR040c3pSRnlNVFMzb2Y0RVJFaGxaN3NQSm1DRGVHNG9vMXd1TTJXNDdCT2Nma0ZIMHhqbi1sZzgydE9fVEZXX0loTDdXbWZwUG1aY1BkRU11TTkwR1dlRXhtUGNuc1U1VW5rMnE1YWVvYlFvSUt2NVN2T3RRLUwzSkFjbWVKLXJWTzV0MUs?oc=5" target="_blank">三大法人買賣超 – 外資買超(2382)廣達、(2303)聯電，投信買超(2454)聯發科、(2313)華通，法人合計賣超94.64億元 - sinotrade.com.tw</a></div><div class="news-item"><a href="https://news.google.com/rss/articles/CBMib0FVX3lxTE9JaVhlNjdSNWFkbklWRzhEa29TRi1qR2FTd2JQRHJlRElmYkZvQjhIM2tfQm9nVGpLdTN1QzlzNTQ1X3pRR0RHcWFMV1lZYUZlYllxOWF6b2swT2p0UXd3OVdaS1VKTjhUc1BtNzNVUQ?oc=5" target="_blank">【台股115/01/27日(二)盤前分析】 - 理財周刊</a></div>
                 </div>
                 
             </div>
